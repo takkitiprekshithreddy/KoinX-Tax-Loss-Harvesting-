@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Class-based dark mode — only activates when .dark is on the root element */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Prevent any overflowing element from creating a horizontal page scrollbar */
+html, body {
+  overflow-x: hidden;
+}
